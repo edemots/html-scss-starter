@@ -1,1 +1,105 @@
-// Put your SCSS here
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+@import "minireset";
+@import "responsive";
+@import "container";
+@import "header";
+@import "logo";
+@import "nav";
+@import "hero";
+@import "button";
+@import "contact";
+@import "qualities";
+@import "footer";
+
+body {
+    font-family: Jost, sans-serif;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+
+    @include xxl {
+        height: calc(2*7.5rem + 640px);
+    }
+}
+
+.project-card {
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 5.625rem 0;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+
+    @include xxl {
+        gap: 2rem;
+        grid-column: span 1;
+
+        &:first-child {
+            grid-row: span 2;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, .5);
+        inset: 0;
+        z-index: 1;
+        transition: background-color 150ms ease-in-out;
+    }
+
+    &:hover {
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: rgba(231, 129, 107, .8);
+            inset: 0;
+            z-index: 1;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        font-size: 1.75rem;
+        letter-spacing: 1.5px;
+        line-height: 2.25rem;
+        color: #fff;
+        margin-bottom: .75rem;
+        position: relative;
+        z-index: 10;
+        grid: 1 / 1 / 2 / 2;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: .25rem;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+        text-decoration: none;
+        grid: 1 / 1 / 2 / 2;
+
+        &-icon {
+            margin-left: 1rem;
+        }
+    }
+}

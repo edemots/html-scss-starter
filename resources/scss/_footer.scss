@@ -1,0 +1,120 @@
+.footer {
+    background-color: #1D1C1E;
+    padding: 4rem 1.5rem;
+    text-align: center;
+
+    @include xxl {
+        text-align: left;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+
+        @include xxl {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__separator {
+        display: none;
+        border-top: 1px solid #FFF;
+        opacity: 10%;
+        margin: 2rem 0;
+
+        @include xxl {
+            margin-top: 2.5rem;
+            display: block;
+        }
+
+        &--mobile {
+            display: block;
+
+            @include xxl {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        @include xxl {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: end;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 2.5rem;
+
+        @include xxl {
+            margin-bottom: 0;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            @include xxl {
+                flex-direction: row;
+                column-gap: 2.625rem;
+            }
+        }
+
+        &-item {
+            color: #FFF;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            letter-spacing: 0.125rem;
+            font-weight: 400;
+        }
+    }
+
+    &__addresses {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        color: #FFF;
+        opacity: .5;
+        line-height: 1.5rem;
+        margin-bottom: 2.5rem;
+
+        @include xxl {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+    }
+
+    &__address {
+        font-style: normal;
+        line-height: 26px;
+
+        &-title {
+            font-weight: 700;
+        }
+
+        &-line {
+            font-weight: 400;
+        }
+
+        &-link {
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        column-gap: 1rem;
+        justify-content: center;
+
+        @include xxl {
+            justify-self: end;
+        }
+    }
+}

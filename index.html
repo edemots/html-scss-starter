@@ -2,13 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- Put your css file here -->
+    <title>Deglingo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./resources/css/main.css" type="text/css">
 </head>
 <body>
+<div class="container">
+    <header class="header">
+        <article class="logo">
+            <img class="logo__image" src="./resources/images/logo.png" alt="">
+            <h1 class="logo__title">Deglingo</h1>
+        </article>
+        <nav class="nav">
+            <button class="nav__burger-button">
+                <img src="./resources/images/burger.svg" alt="">
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item">Our company</li>
+                <li class="nav__item">Location</li>
+                <li class="nav__item">Contact</li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <!-- GLHF -->
+        <article class="hero">
+            <div>
+                <h2 class="hero__title">Award-winning custom designs and digital branding solutions</h2>
+                <p class="hero__subtitle">
+                    With over 10 years in the industry, we are experienced in creating fully responsive websites, app
+                    design, and engaging brand experiences. Find out more about our services.
+                </p>
+                <button class="button button--mobile-centered">Learn more</button>
+            </div>
+            <img class="hero__image" src="./resources/images/phone.png" alt="">
+        </article>
+        <section class="projects">
+            <article class="project-card" style="background-image: url(./resources/images/image1.png)">
+                <h3 class="project-card__title">Web design</h3>
+                <a class="project-card__link" href="">
+                    View projects
+                    <img class="project-card__link-icon" src="./resources/images/caret.svg" alt="">
+                </a>
+            </article>
+            <article class="project-card" style="background-image: url(./resources/images/image2.png)">
+                <h3 class="project-card__title">App design</h3>
+                <a class="project-card__link" href="">
+                    View projects
+                    <img class="project-card__link-icon" src="./resources/images/caret.svg" alt="">
+                </a>
+            </article>
+            <article class="project-card" style="background-image: url(./resources/images/image3.png)">
+                <h3 class="project-card__title">Graphic design</h3>
+                <a class="project-card__link" href="">
+                    View projects
+                    <img class="project-card__link-icon" src="./resources/images/caret.svg" alt="">
+                </a>
+            </article>
+        </section>
+        <section class="qualities">
+            <article class="qualities__item">
+                <img class="qualities__image" src="./resources/images/picto1.png" alt="">
+                <h3 class="qualities__title">Passionate</h3>
+                <p class="qualities__description">
+                    Each project starts with an in-depth brand research to ensure we only create products that serve a
+                    purpose. We merge art, design, and technology into exciting new solutions.
+                </p>
+            </article>
+            <article class="qualities__item">
+                <img class="qualities__image" src="./resources/images/picto2.png" alt="">
+                <h3 class="qualities__title">Resourceful</h3>
+                <p class="qualities__description">
+                    Everything that we do has a strategic purpose. We use an agile approach in all of our projects and
+                    value
+                    customer collaboration. It guarantees superior results that fulfill our clients’ needs.
+                </p>
+            </article>
+            <article class="qualities__item">
+                <img class="qualities__image" src="./resources/images/picto3.png" alt="">
+                <h3 class="qualities__title">Friendly</h3>
+                <p class="qualities__description">
+                    We are a group of enthusiastic folks who know how to put people first. Our success depends on our
+                    customers, and we strive to give them the best experience a company can provide.
+                </p>
+            </article>
+        </section>
+        <article class="contact">
+            <div class="contact__content">
+                <h2 class="contact__title">Let’s talk about your project</h2>
+                <p class="contact__paragraph">
+                    Ready to take it to the next level? Contact us today and find out how our expertise can help your
+                    business
+                    grow.
+                </p>
+            </div>
+            <button class="button button--mobile-centered">Get in touch</button>
+        </article>
     </main>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__header">
+            <article class="logo logo--footer">
+                <img class="logo__image" src="./resources/images/logo.png" alt="">
+                <h2 class="logo__title logo__title--light">Deglingo</h2>
+            </article>
+            <hr class="footer__separator footer__separator--mobile">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">Our company</li>
+                    <li class="footer__nav-item">Location</li>
+                    <li class="footer__nav-item">Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="footer__separator">
+
+        <div class="footer__content">
+            <article class="footer__addresses">
+                <address class="footer__address">
+                    <h4 class="footer__address-title">Deglingo Central Office</h4>
+                    <p class="footer__address-line">
+                        3886 Wellington Street<br>
+                        Toronto, Ontario M9C 3J5
+                    </p>
+                </address>
+                <address class="footer__address">
+                    <h4 class="footer__address-title">Contact Us (Central Office)</h4>
+                    <p class="footer__address-line">
+                        P : <a class="footer__address-link" href="tel:+1253-863-8967">+1 253-863-8967</a><br>
+                        M : <a class="footer__address-link" href="mailto:contact@deglingo.co">contact@deglingo.co</a>
+                    </p>
+                </address>
+            </article>
+
+            <div class="footer__socials">
+                <img src="./resources/images/facebook.svg" alt="">
+                <img src="./resources/images/youtube.svg" alt="">
+                <img src="./resources/images/twitter.svg" alt="">
+                <img src="./resources/images/pinterest.svg" alt="">
+                <img src="./resources/images/insta.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 

@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+    font-family: Jost, sans-serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+    &--mobile-centered {
+        margin: 0 auto;
+
+        @include xxl {
+            margin: 0;
+        }
+    }
+
+    &:hover {
+        background-color: #FFAD9B;
+        color: #fff;
+    }
+}

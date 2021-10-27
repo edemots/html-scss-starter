@@ -1,0 +1,40 @@
+.nav {
+    color: #333136;
+
+    &__burger-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    @at-root &__list {
+        display: none;
+    }
+
+    &__item {
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        cursor: pointer;
+    }
+}
+
+@include xxl {
+    .nav {
+        &__burger-button {
+            display: none;
+        }
+
+        @at-root &__list {
+            display: flex;
+            column-gap: 2.5rem;
+        }
+
+        &__item {
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
